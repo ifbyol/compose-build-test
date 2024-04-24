@@ -1,0 +1,4 @@
+deploy:
+  compose:
+    - file: compose/docker-compose.yml
+    - file: mongodb/docker-compose.yml

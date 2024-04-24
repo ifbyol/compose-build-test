@@ -1,0 +1,6 @@
+services:
+  mongo:
+    image: mongo:4.2.0
+    volumes:
+      - ./files/sample.txt:/data/db
+      - ./another-folder:/user/app/src
