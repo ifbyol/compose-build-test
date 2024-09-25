@@ -1,7 +1,7 @@
-#build:
-#  nginx:
-#    context: .
-#    dockerfile: Dockerfile
+build:
+  service-c:
+    context: .
+    dockerfile: Dockerfile
 
 deploy:
   compose: compose/docker-compose.yml

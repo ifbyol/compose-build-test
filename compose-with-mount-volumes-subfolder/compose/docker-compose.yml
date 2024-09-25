@@ -6,3 +6,10 @@ services:
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - .:/usr/app/src
+  api:
+    build:
+      context: service-a
+      dockerfile: Dockerfile
+    ports:
+      - 8080
+    command: sleep 10000
